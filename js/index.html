@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Personas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .instrucciones {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .nota {
+            background-color: #e7f5fe;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+        }
+        .codigo {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-left: 4px solid #0066cc;
+            margin: 15px 0;
+            font-family: monospace;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Gestión de Personas</h1>
+    
+    <div class="instrucciones">
+        <h2>Instrucciones de Uso</h2>
+        <p><strong>Para utilizar la aplicación JavaScript:</strong></p>
+        <ol>
+            <li>Abra la consola del navegador para interactuar con el programa:
+                <ul>
+                    <li>Windows/Linux: Presione <strong>F12</strong> o haga clic derecho → <strong>Inspeccionar</strong> → <strong>Consola</strong></li>
+                    <li>Mac: Presione <strong>Cmd+Option+J</strong> o haga clic derecho → <strong>Inspeccionar</strong> → <strong>Consola</strong></li>
+                </ul>
+            </li>
+            <li>Una vez en la consola, el programa ya estará ejecutándose</li>
+            <li>Siga las instrucciones que aparecen en la consola para utilizar el programa</li>
+        </ol>
+        
+        <div class="nota">
+            <p><strong>Nota:</strong> Este programa funciona mediante la consola del navegador. Si no ve ninguna interfaz gráfica en esta página, es normal y esperado. La interacción ocurre completamente en la consola.</p>
+        </div>
+        
+        <p>Si desea volver a iniciar el programa en cualquier momento, puede ejecutar manualmente la siguiente instrucción en la consola:</p>
+        <div class="codigo">gestionPersonas();</div>
+    </div>
+    
+    <h2>Funcionalidades</h2>
+    <ul>
+        <li>Agregar personas (nombre, edad, nota)</li>
+        <li>Visualizar listado original de personas</li>
+        <li>Visualizar listado ordenado por nota (mayor a menor)</li>
+        <li>Validación de datos de entrada</li>
+    </ul>
+    
+    <button class="btn" onclick="gestionPersonas()">Reiniciar Programa</button>
+    
+    <footer>
+        <p>Sistema de Gestión de Personas v1.0 | Desarrollado como proyecto educativo</p>
+    </footer>
+    
+    <script src="main.js"></script>
+</body>
+</html>
